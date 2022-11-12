@@ -4,13 +4,16 @@ WORKDIR /home/
 
 RUN echo "testing1234"
 
-RUN git clone https://github.com/noeul1114/pragmatic.git
+RUN git clone https://github.com/HaJunYoo/pragmatic.git
+# https://github.com/noeul1114/pragmatic.git
 
 WORKDIR /home/pragmatic/
 
 RUN pip install -r requirements.txt
 
 RUN pip install gunicorn
+
+RUN echo "SECRET_KEY=django-insecure-9c7jsx39u&=b@a2h&1=3=wcwh!bvh&22)2kwqyh=mg&&ylw_l@" > .env
 
 RUN pip install mysqlclient
 

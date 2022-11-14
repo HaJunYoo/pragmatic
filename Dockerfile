@@ -15,7 +15,7 @@ RUN pip install -r requirements.txt
 
 RUN pip install gunicorn
 
-RUN echo "SECRET_KEY=django-insecure-9c7jsx39u&=b@a2h&1=3=wcwh!bvh&22)2kwqyh=mg&&ylw_l@" > .env
+
 # 시크릿 키가 들어간 env 파일이 생긴다
 
 RUN python manage.py migrate

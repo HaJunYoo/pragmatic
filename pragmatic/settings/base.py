@@ -18,6 +18,7 @@ from django.contrib.messages import constants as messages
 from django.urls import reverse_lazy
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+# parent를 한번 더
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 

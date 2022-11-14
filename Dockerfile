@@ -20,6 +20,8 @@ RUN echo "SECRET_KEY=django-insecure-9c7jsx39u&=b@a2h&1=3=wcwh!bvh&22)2kwqyh=mg&
 
 RUN python manage.py migrate
 
+RUN python manage.py collectstatic
+
 EXPOSE 8000
 # 내부 쟝고 컨테이너 8000 포트 노출
 
